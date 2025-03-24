@@ -1,0 +1,1 @@
+components/OutfitCreator.tsx is components/OutfitCreator.tsx

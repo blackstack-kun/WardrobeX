@@ -1,0 +1,144 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 600px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.outfitContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.clothingDisplay {
+  width: 200px;
+  height: 150px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clothingDisplay img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.arrow {
+  padding: 0.75rem;
+  font-size: 1.25rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow:hover {
+  background-color: #45a049;
+}
+
+.placeholder {
+  color: #666;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.saveSection {
+  margin-top: 1rem;
+}
+
+.outfitNameInput {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.saveButton,
+.cancelButton {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.saveButton {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.cancelButton {
+  background-color: #f44336;
+  color: white;
+}
+
+.title {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+@media (max-height: 700px) {
+  .modalContent {
+    max-height: 95vh;
+    padding: 1rem;
+  }
+
+  .clothingDisplay {
+    width: 180px;
+    height: 120px;
+  }
+
+  .outfitContainer {
+    gap: 0.75rem;
+  }
+
+  .title {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.25rem;
+  }
+} 

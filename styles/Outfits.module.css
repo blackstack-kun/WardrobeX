@@ -1,0 +1,185 @@
+.container {
+  min-height: 100vh;
+  background-color: #f5f7fa;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.backButton {
+  padding: 0.5rem 1rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.main {
+  padding: 1.5rem;
+}
+
+.title {
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.outfitsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.outfitCard {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.outfitName {
+  margin: 0 0 0.5rem 0;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.outfitPreview {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.clothingItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.clothingItem img {
+  width: 100%;
+  height: 120px;
+  object-fit: contain;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.clothingItem span {
+  color: #666;
+  font-size: 0.8rem;
+}
+
+.deleteButton {
+  width: 100%;
+  padding: 0.4rem;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.deleteButton:hover {
+  background-color: #d32f2f;
+}
+
+.noOutfits {
+  text-align: center;
+  padding: 3rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.noOutfits p {
+  margin-bottom: 1rem;
+  color: #666;
+}
+
+.createButton {
+  padding: 0.5rem 1rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.createButton:hover {
+  background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+  .outfitsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .main {
+    padding: 1rem;
+  }
+}
+
+/* Add styles for confirmation toast */
+.confirmToast {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  max-width: 300px;
+  text-align: center;
+}
+
+.confirmToast p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.confirmButtons {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.confirmButton, 
+.cancelButton {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.confirmButton {
+  background-color: #f44336;
+  color: white;
+}
+
+.confirmButton:hover {
+  background-color: #d32f2f;
+}
+
+.cancelButton {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.cancelButton:hover {
+  background-color: #bdbdbd;
+} 

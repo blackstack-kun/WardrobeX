@@ -1,0 +1,181 @@
+.container {
+  min-height: 100vh;
+  background-color: #f5f7fa;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+.backButton {
+  padding: 0.5rem 1rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.main {
+  padding: 2rem;
+}
+
+.categories {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+}
+
+.categoryButton {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.categoryButton.active {
+  background-color: #4CAF50;
+  color: white;
+  border-color: #4CAF50;
+}
+
+.clothesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.clothingItem {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: transform 0.2s;
+}
+
+.clothingItem:hover {
+  transform: translateY(-5px);
+}
+
+.clothingItem img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.clothingItem h3 {
+  padding: 1rem;
+  margin: 0;
+}
+
+.clothingItem p {
+  padding: 0 1rem;
+  color: #666;
+  margin: 0;
+}
+
+.category {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  margin: 1rem;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  font-size: 0.875rem;
+}
+
+.itemActions {
+  display: flex;
+  gap: 0.5rem;
+  padding: 1rem;
+  justify-content: space-between;
+}
+
+.previewButton,
+.removeButton {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.previewButton {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.removeButton {
+  background-color: #f44336;
+  color: white;
+}
+
+.previewModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.previewContent {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 90%;
+  max-height: 90vh;
+  overflow: auto;
+  position: relative;
+}
+
+.previewContent img {
+  max-width: 100%;
+  max-height: 70vh;
+  object-fit: contain;
+}
+
+.closeButton {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #333;
+}
+
+.previewInfo {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.previewCategory {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+} 

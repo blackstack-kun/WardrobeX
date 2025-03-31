@@ -12,13 +12,13 @@ Virtual AI Wardrobe is a smart web application that lets users upload 2D clothin
 ## Screenshots
 
 ### 🔐 Login Page
-![Login Page](public/screenshots/login.png)
+![Login Page](screenshots/login.png)
 
 ### 🏠 Home Page (Wardrobe View)
-![Home Page](public/screenshots/home.png)
+![Home Page](screenshots/home.png)
 
 ### 👗 AI-Based Recommendation Output
-![Recommendation Output](public/screenshots/recommendation.png)
+![Recommendation Output](screenshots/recommendation.png)
 
 ## Tech Stack
 - **Framework:** Next.js
